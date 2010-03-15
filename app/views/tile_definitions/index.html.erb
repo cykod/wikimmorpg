@@ -1,0 +1,21 @@
+<h1>Listing tile_definitions</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @tile_definitions.each do |tile_definition| %>
+  <tr>
+	<td><%= image_tag tile_definition.image.url(:tile) %>
+	<td><%= tile_definition.name %></td>
+	<td><%= tile_definition.image_file_name %></td>
+    <td><%= link_to 'Show', tile_definition %></td>
+    <td><%= link_to 'Edit', edit_tile_definition_path(tile_definition) %></td>
+    <td><%= link_to 'Destroy', tile_definition, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tile_definition', new_tile_definition_path %>

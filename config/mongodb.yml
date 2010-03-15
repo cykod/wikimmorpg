@@ -1,0 +1,11 @@
+development:
+  server: localhost
+  database: rooms
+
+test:
+  server: localhost
+  database: rooms-test
+
+production:
+  server: localhost
+  database: rooms

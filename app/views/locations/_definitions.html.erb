@@ -1,0 +1,7 @@
+
+<% @definitions.each do |definition| %>
+<div class='definition' id='definition_<%= definition.id %>'>
+<%= image_tag definition.image.url(:small) %>	
+</div>
+<% end %>
+<div class='clear'></div>

@@ -1,0 +1,13 @@
+<h1><%= @tile_definition.new_record? ? "Create Tile Definition" : "Edit #{h @tile_definition.name}"%></h1>
+
+
+<% semantic_form_for @tile_definition, :html => { :multipart => true  } do |form| %>
+	<%= form.input :name %>
+	<%= form.input :image %>
+	<%= form.input :solid, :as => :boolean %>
+
+   <%= form.buttons %>
+ <% end %>
+
+<%= link_to 'Show', @tile_definition %> |
+<%= link_to 'Back', tile_definitions_path %>

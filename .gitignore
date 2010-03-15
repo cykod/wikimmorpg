@@ -1,0 +1,11 @@
+!.gitignore
+*~
+\#*\#
+.\#*
+tmp/
+backup/
+coverage/
+public/system/
+.sqlite3
+.yml
+.DS_Store

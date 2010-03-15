@@ -1,0 +1,13 @@
+
+<table cellpadding='0' cellspacing='0'>
+<% @location.each_with_index do |row,row_idx| %>
+<tr>
+	<% row.each_with_index do |tile,col_idx| -%>
+ 	<td class='edit_tile' id='tile_<%= row_idx %>_<%= col_idx %>'>
+         <%= tile_image_tag(tile,:small) %>
+         <%= tile_hidden_fields(tile) %>
+    </td>
+	<% end -%>
+</tr>
+<% end -%>	
+</table>

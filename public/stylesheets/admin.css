@@ -1,0 +1,17 @@
+
+
+.definition {
+	float:left; margin-right:10px;
+	padding:5px;
+}
+
+.selected_definition {
+	background-color:red;
+}
+
+.clear { clear:both;}
+
+.table_grid td {
+  padding:0px;
+  border:0px;
+}

@@ -1,0 +1,16 @@
+
+
+<div id='gameboard'></div>
+
+<script type='text/javascript'>
+$(function() { 
+
+var room = new Room("<%= @room.id %>",<%= @room.map_data.to_json %>);
+
+var everyone = <%= @everyone.to_json %>;
+var player = <%= @player.to_json %>;
+
+Smorpglish.init(everyone,player,room);
+	 });
+
+</script>
